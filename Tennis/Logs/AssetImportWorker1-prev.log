@@ -15,7 +15,7 @@ C:/Users/4810s/RiderProjects/FinalTennisFinal/Tennis
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-55030
+55210
 Successfully changed project path to: C:/Users/4810s/RiderProjects/FinalTennisFinal/Tennis
 C:/Users/4810s/RiderProjects/FinalTennisFinal/Tennis
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,13 +49,13 @@ C:/Users/4810s/RiderProjects/FinalTennisFinal/Tennis
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [2848] Host "[IP] 192.168.50.41 [Port] 0 [Flags] 2 [Guid] 3669609032 [EditorId] 3669609032 [Version] 1048832 [Id] WindowsEditor(7,ヒソヒソ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [30828] Host "[IP] 192.168.50.41 [Port] 0 [Flags] 2 [Guid] 2044095551 [EditorId] 2044095551 [Version] 1048832 [Id] WindowsEditor(7,ヒソヒソ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [2848] Host "[IP] 192.168.50.41 [Port] 0 [Flags] 2 [Guid] 3669609032 [EditorId] 3669609032 [Version] 1048832 [Id] WindowsEditor(7,ヒソヒソ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [30828] Host "[IP] 192.168.50.41 [Port] 0 [Flags] 2 [Guid] 2044095551 [EditorId] 2044095551 [Version] 1048832 [Id] WindowsEditor(7,ヒソヒソ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 23 workers.
-Refreshing native plugins compatible for Editor in 12.99 ms, found 11 plugins.
-Preloading 3 native plugins for Editor in 1.75 ms.
+Refreshing native plugins compatible for Editor in 14.02 ms, found 11 plugins.
+Preloading 3 native plugins for Editor in 1.81 ms.
 Initialize engine version: 2022.3.24f1 (334eb2a0b267)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/4810s/RiderProjects/FinalTennisFinal/Tennis/Assets
@@ -72,5 +72,618 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56180
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56240
 Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005667 seconds.
+- Loaded All Assemblies, in  0.300 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android SDK Build-tools component is not found. Make sure all tools are installed in the SDK manager.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.Android.AndroidSDKTools:UpdateToolsDirectories ()
+UnityEditor.Android.AndroidSDKTools:.ctor (string)
+UnityEditor.Android.AndroidSDKTools:CreateAndroidSDKTools (string)
+UnityEditor.Android.AndroidSDKTools:GetInstance<UnityEditor.Android.AndroidSDKTools> (UnityEditor.Android.AndroidSDKTools/InstanceCreator)
+UnityEditor.Android.AndroidSDKTools:GetInstance ()
+UnityEditor.Android.AndroidDeploymentTargetsExtension:GetMainThreadContext (bool)
+UnityEditor.Android.TargetExtension:OnUsbDevicesChanged (UnityEditor.Hardware.UsbDevice[])
+UnityEditor.Android.TargetExtension:OnLoad ()
+UnityEditor.Modules.ModuleManager:InitializePlatformSupportModules ()
+
+Android Extension - Scanning For ADB Devices 1216 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.459 seconds
+Domain Reload Profiling: 1758ms
+	BeginReloadAssembly (79ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (149ms)
+		LoadAssemblies (78ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (146ms)
+			TypeCache.Refresh (145ms)
+				TypeCache.ScanAssembly (132ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1460ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1413ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1295ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (81ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.624 seconds
+Refreshing native plugins compatible for Editor in 8.52 ms, found 11 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+System.ArgumentException: JSON parse error: Invalid value.
+  at (wrapper managed-to-native) UnityEngine.JsonUtility.FromJsonInternal(string,object,System.Type)
+  at UnityEngine.JsonUtility.FromJsonOverwrite (System.String json, System.Object objectToOverwrite) [0x00059] in <b5f3ce160aa7489fabbd685e71298a61>:0 
+  at UnityEditor.XR.Management.XRPackageInitializationSettings.LoadSettings () [0x00023] in .\Library\PackageCache\com.unity.xr.management@4.4.1\Editor\XRPackageInitializationSettings.cs:68 
+  at UnityEditor.XR.Management.XRPackageInitializationSettings.get_Instance () [0x00034] in .\Library\PackageCache\com.unity.xr.management@4.4.1\Editor\XRPackageInitializationSettings.cs:41 
+  at UnityEditor.XR.Management.Legacy.XRLegacyUninstaller..cctor () [0x00108] in .\Library\PackageCache\com.unity.xr.management@4.4.1\Editor\Legacy\XRLegacyUninstaller.cs:121 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:298 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:283 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <fa3f61a6dce8479c85ca5d90a86ee19e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.600 seconds
+Domain Reload Profiling: 1221ms
+	BeginReloadAssembly (112ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (15ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (446ms)
+		LoadAssemblies (296ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (217ms)
+			TypeCache.Refresh (172ms)
+				TypeCache.ScanAssembly (155ms)
+			ScanForSourceGeneratedMonoScriptInfo (33ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (600ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (449ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (82ms)
+			ProcessInitializeOnLoadAttributes (320ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 7.80 ms, found 11 plugins.
+Preloading 3 native plugins for Editor in 0.14 ms.
+Unloading 6177 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 90 unused Assets / (76.7 KB). Loaded Objects now: 6611.
+Memory consumption went from 215.3 MB to 215.2 MB.
+Total: 3.149700 ms (FindLiveObjects: 0.244700 ms CreateObjectMapping: 0.099900 ms MarkObjects: 2.698600 ms  DeleteObjects: 0.105300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 13.45 ms, found 11 plugins.
+Preloading 3 native plugins for Editor in 0.11 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 6611.
+Memory consumption went from 102.2 MB to 102.2 MB.
+Total: 4.370300 ms (FindLiveObjects: 0.344100 ms CreateObjectMapping: 0.155900 ms MarkObjects: 3.842800 ms  DeleteObjects: 0.026900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 8.73 ms, found 11 plugins.
+Preloading 3 native plugins for Editor in 0.10 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 6611.
+Memory consumption went from 101.4 MB to 101.4 MB.
+Total: 3.262600 ms (FindLiveObjects: 0.260700 ms CreateObjectMapping: 0.105300 ms MarkObjects: 2.876100 ms  DeleteObjects: 0.019400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.727 seconds
+Refreshing native plugins compatible for Editor in 8.97 ms, found 11 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+System.ArgumentException: JSON parse error: Invalid value.
+  at (wrapper managed-to-native) UnityEngine.JsonUtility.FromJsonInternal(string,object,System.Type)
+  at UnityEngine.JsonUtility.FromJsonOverwrite (System.String json, System.Object objectToOverwrite) [0x00059] in <b5f3ce160aa7489fabbd685e71298a61>:0 
+  at UnityEditor.XR.Management.XRPackageInitializationSettings.LoadSettings () [0x00023] in .\Library\PackageCache\com.unity.xr.management@4.4.1\Editor\XRPackageInitializationSettings.cs:68 
+  at UnityEditor.XR.Management.XRPackageInitializationSettings.get_Instance () [0x00034] in .\Library\PackageCache\com.unity.xr.management@4.4.1\Editor\XRPackageInitializationSettings.cs:41 
+  at UnityEditor.XR.Management.Legacy.XRLegacyUninstaller..cctor () [0x00108] in .\Library\PackageCache\com.unity.xr.management@4.4.1\Editor\Legacy\XRLegacyUninstaller.cs:121 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:298 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0008c] in .\Library\PackageCache\com.unity.xr.oculus@4.2.0\Runtime\OculusLoader.cs:283 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <b11ba2a8fbf24f219f7cc98532a11304>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <fa3f61a6dce8479c85ca5d90a86ee19e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.508 seconds
+Domain Reload Profiling: 2231ms
+	BeginReloadAssembly (162ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (505ms)
+		LoadAssemblies (396ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (182ms)
+			TypeCache.Refresh (134ms)
+				TypeCache.ScanAssembly (120ms)
+			ScanForSourceGeneratedMonoScriptInfo (33ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1509ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (538ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (95ms)
+			ProcessInitializeOnLoadAttributes (375ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 8.72 ms, found 11 plugins.
+Preloading 3 native plugins for Editor in 0.09 ms.
+Unloading 6091 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 60 unused Assets / (50.9 KB). Loaded Objects now: 6615.
+Memory consumption went from 197.8 MB to 197.7 MB.
+Total: 3.034900 ms (FindLiveObjects: 0.254600 ms CreateObjectMapping: 0.098400 ms MarkObjects: 2.620700 ms  DeleteObjects: 0.060400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 13.39 ms, found 11 plugins.
+Preloading 3 native plugins for Editor in 0.17 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 6615.
+Memory consumption went from 104.0 MB to 104.0 MB.
+Total: 11.266500 ms (FindLiveObjects: 0.304600 ms CreateObjectMapping: 0.173000 ms MarkObjects: 10.761200 ms  DeleteObjects: 0.026900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 886208.619983 seconds.
+  path: Assets/Material/BallSphere.mat
+  artifactKey: Guid(039894aacdf683d47a80cde79481ed90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/BallSphere.mat using Guid(039894aacdf683d47a80cde79481ed90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71d1451aa3e877b9d4a5f291118dda2a') in 0.231377 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Packages/com.meta.xr.sdk.interaction/Runtime/Materials/DistanceLine.mat
+  artifactKey: Guid(6ca35ef23029a0243b2a3a93082a3c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Materials/DistanceLine.mat using Guid(6ca35ef23029a0243b2a3a93082a3c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6267231dffc342a7cc623878939eded9') in 0.069698 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Packages/com.meta.xr.sdk.interaction/Runtime/Materials/CrossMaterial.mat
+  artifactKey: Guid(23530cc4d61a63f4c946ccd1b0315b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Materials/CrossMaterial.mat using Guid(23530cc4d61a63f4c946ccd1b0315b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06d9ea5544baaba30d64af6e65ff9b52') in 0.037951 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Packages/com.meta.xr.sdk.core/Materials/BasicHandMaterial.mat
+  artifactKey: Guid(5ba7d209f622bb44e87b47ce27ee27b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.meta.xr.sdk.core/Materials/BasicHandMaterial.mat using Guid(5ba7d209f622bb44e87b47ce27ee27b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f69eadec726d9f68cf400eb575e328ae') in 0.126534 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Image/Materials/card.mat
+  artifactKey: Guid(a1f2c7424257d4649a653828d6afb278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Materials/card.mat using Guid(a1f2c7424257d4649a653828d6afb278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '607c30c54af820fc960601fc7c970e06') in 0.022360 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Packages/com.meta.xr.sdk.core/Materials/CubeMaterial.mat
+  artifactKey: Guid(62db2d638434d5a488dfb1e789e34b37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.meta.xr.sdk.core/Materials/CubeMaterial.mat using Guid(62db2d638434d5a488dfb1e789e34b37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d5d587294e6411b9dc98175f4243b94') in 0.012976 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/RoomModel/Materials/Blue.mat
+  artifactKey: Guid(a1c25e8e73c7f8f42a98e91dd31d27d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/RoomModel/Materials/Blue.mat using Guid(a1c25e8e73c7f8f42a98e91dd31d27d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4e195784d839f00e1bae15518cf0974') in 0.020669 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Image/model/apple/The_image_is_a_black_and_white_illustration_of_an_apple_The__0601121108_preview.obj
+  artifactKey: Guid(b4487882f5076784795b4a9aa525accb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/model/apple/The_image_is_a_black_and_white_illustration_of_an_apple_The__0601121108_preview.obj using Guid(b4487882f5076784795b4a9aa525accb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b10873c291c2e09f3fa42fa007f17906') in 0.034273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.meta.xr.mrutilitykit/Core/Textures/Fonts/Optimistic_Display_A_Bd.ttf
+  artifactKey: Guid(b7e83398a6bbcdb4a9d2fa4b09c4f7a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.meta.xr.mrutilitykit/Core/Textures/Fonts/Optimistic_Display_A_Bd.ttf using Guid(b7e83398a6bbcdb4a9d2fa4b09c4f7a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f622e56602652e2ce7e484046aa9d500') in 0.017156 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Packages/com.meta.xr.mrutilitykit/Core/Materials/GREEN_Plant.mat
+  artifactKey: Guid(af187e204a0603d438d2d211f02948e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.meta.xr.mrutilitykit/Core/Materials/GREEN_Plant.mat using Guid(af187e204a0603d438d2d211f02948e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fb4b2b9a39218a36508314f00a7b880') in 0.041040 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3acf6394e387173a99769b9024cc695e') in 0.061157 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.meta.xr.sdk.core/Meshes/MetaQuestTouchPlus/Materials/MetaQuestTouchPlusRight_Material.fbx
+  artifactKey: Guid(bbb35201095f6bf499fe2cd30ef3b6c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.meta.xr.sdk.core/Meshes/MetaQuestTouchPlus/Materials/MetaQuestTouchPlusRight_Material.fbx using Guid(bbb35201095f6bf499fe2cd30ef3b6c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7c16c38d821df4713fbedb3459f30d9') in 0.168505 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AssetStore/Mini Legion Rock Golem PBR HP Polyart/Meshes/RockMesh.fbx
+  artifactKey: Guid(61d36fd741d737440a1141db2542d983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Mini Legion Rock Golem PBR HP Polyart/Meshes/RockMesh.fbx using Guid(61d36fd741d737440a1141db2542d983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a19b68276aa6630a4cf0d3382ccf551c') in 0.023276 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Image/model/swords/The_image_features_a_pair_of_crossed_swords_each_with_a_curv_0601120658_refine.obj
+  artifactKey: Guid(c3ecf23da13ec904289e69aad6036bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/model/swords/The_image_features_a_pair_of_crossed_swords_each_with_a_curv_0601120658_refine.obj using Guid(c3ecf23da13ec904289e69aad6036bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f716d3fed121b2e4ff073fe85fabd787') in 0.035496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Material/map.mat
+  artifactKey: Guid(cfaacf1f999a8aa4990d8ed878c59bb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/map.mat using Guid(cfaacf1f999a8aa4990d8ed878c59bb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f098b087a9e82c1d72ce5cfdb2c30975') in 0.011099 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/AssetStore/Mini Legion Rock Golem PBR HP Polyart/Materials/HP_Golem.mat
+  artifactKey: Guid(c8a253bc1d9e7814a87d01583a336bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Mini Legion Rock Golem PBR HP Polyart/Materials/HP_Golem.mat using Guid(c8a253bc1d9e7814a87d01583a336bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fa7869cad902adcd666b75babd90e2a') in 0.152373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Packages/com.meta.xr.mrutilitykit/Core/Materials/BLUE_Table.mat
+  artifactKey: Guid(33372feefe2aa594aa9278863b518f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.meta.xr.mrutilitykit/Core/Materials/BLUE_Table.mat using Guid(33372feefe2aa594aa9278863b518f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b77b1ee64962be38ad33761abb258be2') in 0.015424 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Packages/com.meta.xr.sdk.interaction/Runtime/Materials/GrabDebugSphere.mat
+  artifactKey: Guid(f4b49debff9d269449879fc6f5991a83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Materials/GrabDebugSphere.mat using Guid(f4b49debff9d269449879fc6f5991a83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90a91314118918098815ce0d482f552b') in 0.030128 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Packages/com.meta.xr.sdk.interaction/Runtime/Meshes/Locomotion/Materials/MetaCrossMat.mat
+  artifactKey: Guid(c488f540b43d29f499ff5b09a9584dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Meshes/Locomotion/Materials/MetaCrossMat.mat using Guid(c488f540b43d29f499ff5b09a9584dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c024a392b824a2337710cceeaa58ab4') in 0.013440 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Packages/com.meta.xr.sdk.core/Meshes/MetaQuestTouchPro/Materials/MetaQuestProLeft_Material.fbx
+  artifactKey: Guid(2fadc56f841e8224ea1ff539811fc765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.meta.xr.sdk.core/Meshes/MetaQuestTouchPro/Materials/MetaQuestProLeft_Material.fbx using Guid(2fadc56f841e8224ea1ff539811fc765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6ab5707e08a7e12942e357e8dc98753') in 0.052618 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.meta.xr.sdk.interaction/Runtime/Materials/DebugUnlitMaterial.mat
+  artifactKey: Guid(32c9cae82fc27e4429ecd48a7c3ea496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.meta.xr.sdk.interaction/Runtime/Materials/DebugUnlitMaterial.mat using Guid(32c9cae82fc27e4429ecd48a7c3ea496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0de67430ae6954092296155a5426506') in 0.036895 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/SampleSpatialAnchorController/Materials/IconBackground.mat
+  artifactKey: Guid(d926560f9f4cfa240ae27300a8c77531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/SampleSpatialAnchorController/Materials/IconBackground.mat using Guid(d926560f9f4cfa240ae27300a8c77531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f05a78e184d31a7a8833a15605eb509') in 0.014552 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Packages/com.meta.xr.sdk.core/Meshes/MetaQuestTouchPlus/Materials/MetaQuestTouchPlusMATphong_left.mat
+  artifactKey: Guid(5487a7af70ff7364996d8da93d056fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.meta.xr.sdk.core/Meshes/MetaQuestTouchPlus/Materials/MetaQuestTouchPlusMATphong_left.mat using Guid(5487a7af70ff7364996d8da93d056fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcc6fd681b296db0934205df2790c971') in 0.269394 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Packages/com.meta.xr.mrutilitykit/Core/Textures/Fonts/Optimistic_Display_A_SBd.ttf
+  artifactKey: Guid(4461abd50ab4b1d4388115f9824b6293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.meta.xr.mrutilitykit/Core/Textures/Fonts/Optimistic_Display_A_SBd.ttf using Guid(4461abd50ab4b1d4388115f9824b6293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82d6668159459615d687310bdc354540') in 0.008674 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Image/Materials/Firefly 閭梧勹縺ｯ縺�繧峨↑縺�縲繝峨ャ繝育ｵｵ縲逋ｽ鮟偵邊礼岼縲繝ｪ繝ｳ繧ｴ縺ｮ繝槭�ｼ繧ｯ縲荳縺､ 86030.mat
+  artifactKey: Guid(0dedfdf03fe93834a9049ccb07190dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Image/Materials/Firefly 閭梧勹縺ｯ縺�繧峨↑縺�縲繝峨ャ繝育ｵｵ縲逋ｽ鮟偵邊礼岼縲繝ｪ繝ｳ繧ｴ縺ｮ繝槭�ｼ繧ｯ縲荳縺､ 86030.mat using Guid(0dedfdf03fe93834a9049ccb07190dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd001d28fe2eede0ff4f72cfa4bfb109') in 0.028620 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd099c683f6b9b33f21c4604adafd86ba') in 0.010101 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Packages/com.meta.xr.mrutilitykit/Core/Materials/GRAY_Wall.mat
+  artifactKey: Guid(b4595016ef5b8214fb56ad03c84e04c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.meta.xr.mrutilitykit/Core/Materials/GRAY_Wall.mat using Guid(b4595016ef5b8214fb56ad03c84e04c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff745d4562ade5cf2ea3b2f4b2237b03') in 0.013722 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/LowPolyTableTennis/Materials/Ball/BallWhite.mat
+  artifactKey: Guid(89e9025d51b61274cafea821b4b3ec36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyTableTennis/Materials/Ball/BallWhite.mat using Guid(89e9025d51b61274cafea821b4b3ec36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0873e67b1cdd7c5677f40260cd6bc198') in 0.086598 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.meta.xr.sdk.core/Meshes/MetaQuestTouchPro/Materials/MetaQuestProRight_Material.mat
+  artifactKey: Guid(dfee80e1d2a38ea45a01698af1c06034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.meta.xr.sdk.core/Meshes/MetaQuestTouchPro/Materials/MetaQuestProRight_Material.mat using Guid(dfee80e1d2a38ea45a01698af1c06034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd016ff31376d40dba3fac49aca6038b') in 0.050303 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Packages/com.meta.xr.sdk.interaction.ovr/Editor/Blocks/RealHands/Materials/HandMaterial.mat
+  artifactKey: Guid(d5e2ab92e53f69e40a760f658d55cb3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.meta.xr.sdk.interaction.ovr/Editor/Blocks/RealHands/Materials/HandMaterial.mat using Guid(d5e2ab92e53f69e40a760f658d55cb3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5430621a891e54e971bf1eee67559d76') in 0.048136 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Packages/com.meta.xr.sdk.core/Meshes/MetaQuestTouchPlus/Materials/MetaQuestTouchPlusMATphong_right.mat
+  artifactKey: Guid(4b13877204bf5394c80dc8b6e469ec13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.meta.xr.sdk.core/Meshes/MetaQuestTouchPlus/Materials/MetaQuestTouchPlusMATphong_right.mat using Guid(4b13877204bf5394c80dc8b6e469ec13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96564a221d2e739d72b3b108cfce8fa0') in 0.057052 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Packages/com.meta.xr.sdk.core/Materials/cursor_timer_material.mat
+  artifactKey: Guid(9531aa878fd5c4749b288b72024e8d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.meta.xr.sdk.core/Materials/cursor_timer_material.mat using Guid(9531aa878fd5c4749b288b72024e8d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b59a6fb7135b1fd7b5607b0d3517f26e') in 0.046405 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.meta.xr.sdk.core/Materials/OVRTrackedKeyboard/BillboardMask.mat
+  artifactKey: Guid(e5efaaa7295b60c4b99c88ff76db4d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.meta.xr.sdk.core/Materials/OVRTrackedKeyboard/BillboardMask.mat using Guid(e5efaaa7295b60c4b99c88ff76db4d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a79c7a476eb145597e34c20cf32c050') in 0.062947 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: スレッドの終了またはアプリケーションの要求によって、I/O 処理は中止されました。
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
