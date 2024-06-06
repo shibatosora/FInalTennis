@@ -9,7 +9,7 @@ namespace Script
         [SerializeField] private LogManager logManager;
         void Start()
         {
-            StartPlayerTurn();
+            
         }
 
         public void Clear()
@@ -17,7 +17,7 @@ namespace Script
             
         }
 
-        void StartPlayerTurn()
+        public void StartPlayerTurn()
         {
             // プレイヤーのターンを開始する
             racket.StartTurn();

@@ -1,3 +1,4 @@
+using UnityEditorInternal;
 using UnityEngine;
 
 namespace Script
@@ -16,23 +17,31 @@ namespace Script
         private bool AttackChance = false;
 
         //ステータス
-        private int HP = 5;
-        public int Power = 2;
+        private int MaxHP = 10;
+        private int Power = 2;
         private int MP = 10;
-        private int define;
+        private int Define;
 
+        public int _HP;
+        public int _power;
+        public int _MP;
+        public int _define;
 
         public bool playerTurn = false;
 
         void Start()
         {
             lastPosition = transform.position;
+            _HP = MaxHP;
+            _power = Power;
+            _define = Define;
+            _MP = MP;
         }
 
         public void StartTurn()
         {
             playerTurn = true;
-            StartCoroutine(logManager.TypeLog($"あなたのターンです。"));
+            //StartCoroutine(logManager.TypeLog($"あなたのターンです。"));
         }
 
         public void EndTurn()
@@ -49,7 +58,7 @@ namespace Script
 
         public void Defend()
         {
-            define = 2;
+            _define = 2;
         }
 
         public void Skill()

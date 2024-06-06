@@ -40,7 +40,7 @@ namespace Script
                 }
                 if (bounds == 1)
                 {
-                    playerPower = raket.Power;
+                    playerPower = raket._power;
                     enemy.EnemyDamage(playerPower);
                 }
                 Destroy(this.gameObject);
