@@ -12,17 +12,15 @@ namespace Script
         public float attackProbability = 0.4f;
         public float defendProbability = 0.3f;
         public float skillProbability = 0.3f;
-        [SerializeField] GameManager _gameManager;
+        [SerializeField] GameManager gameManager;
         [SerializeField] private EnemyBase enemyBase;
         private EnemyBase _base;
-        [SerializeField] private LogManager logManager;
         //ステータス
-        private int HP;
+        private int HP=1;
         private int power;
         private int define;
         private Skills skill;
         private EnemyElement element;
-
         private void Start()
         {
             HP = _base.MaxHP;
@@ -94,9 +92,9 @@ namespace Script
         {
             if (HP <= 0)
             {
-                _gameManager.Clear();
+                gameManager.Clear();
+                Debug.Log("adsdda");
                 Destroy(this.gameObject);
-                
             }
         } 
     }
