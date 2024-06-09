@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Unity.VisualScripting;
+using UnityEngine;
 
 namespace Script
 {
@@ -7,21 +8,18 @@ namespace Script
         [SerializeField] Racket racket;
         [SerializeField] Enemy enemy;
         [SerializeField] private LogManager logManager;
-        void Start()
-        {
-            
-        }
-
+        [SerializeField] private GameObject Card;
+        //カード選択
+        void Start() { Card.SetActive(true); }
+        //敵ランダム選択
+        public void Spawn() { enemy.EnemySelect(); }
+        
         public void Clear()
         {
             
         }
-
-        public void StartPlayerTurn()
-        {
             // プレイヤーのターンを開始する
-            racket.StartTurn();
-        }
+        public void StartPlayerTurn() { racket.StartTurn(); }
 
         // プレイヤーが攻撃を選択したときに呼び出されるメソッド
         public void OnAttackButtonClicked()

@@ -26,7 +26,10 @@ namespace Script
         public int _power;
         public int _MP;
         public int _define;
-
+        //スキル
+        private bool fireBall = false;
+        private bool aquaCure = false;
+        private bool leafGard = false;
         public bool playerTurn = false;
 
         void Start()
@@ -38,10 +41,15 @@ namespace Script
             _MP = MP;
         }
 
+        public void SkillFireBall() { fireBall = true; _gameManager.Spawn(); }
+        public void SkillAquaCure() { aquaCure = true;_gameManager.Spawn(); }
+        public void SkillLeafGard() { leafGard = true;_gameManager.Spawn();  }
+
         public void StartTurn()
         {
             playerTurn = true;
-            //StartCoroutine(logManager.TypeLog($"あなたのターンです。"));
+            StartCoroutine(logManager.TypeLog($"あなたのターンです。"));
+            
         }
 
         public void EndTurn()

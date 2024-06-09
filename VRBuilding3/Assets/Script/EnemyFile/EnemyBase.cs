@@ -24,6 +24,7 @@ namespace Script
         public int Attack { get => attack; }
         public int MaxHP { get => maxHP; }
         public int Definese { get => definese; }
+        public GameObject EnemyDate { get => enemyDate; }
         
     }
 

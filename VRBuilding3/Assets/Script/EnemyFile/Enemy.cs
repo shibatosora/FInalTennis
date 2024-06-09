@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq.Expressions;
 using TMPro.EditorUtilities;
 using UnityEngine;
@@ -13,8 +14,9 @@ namespace Script
         public float defendProbability = 0.3f;
         public float skillProbability = 0.3f;
         [SerializeField] GameManager gameManager;
-        [SerializeField] private EnemyBase enemyBase;
-        private EnemyBase _base;
+        [SerializeField] private List<EnemyBase> enemyBase=new List<EnemyBase>();
+        [SerializeField] private EnemyBase bossEnemy;
+        [SerializeField] private LogManager logManager;
         //ステータス
         private int HP=1;
         private int power;
@@ -23,11 +25,20 @@ namespace Script
         private EnemyElement element;
         private void Start()
         {
-            HP = _base.MaxHP;
-            power = _base.Attack;
-            define = _base.Definese;
-            skill = _base.Skills;
-            element = _base.Element;
+
+        }
+
+        public void EnemySelect()
+        {
+            int randamValue = Random.Range(0, 3);
+            GameObject enemy = Instantiate(enemyBase[randamValue].EnemyDate, enemyBase[randamValue].EnemyDate.transform.position, enemyBase[randamValue].EnemyDate.transform.rotation);
+            HP = enemyBase[randamValue].MaxHP;
+            power = enemyBase[randamValue].Attack;
+            define = enemyBase[randamValue].Definese;
+            skill = enemyBase[randamValue].Skills;
+            element = enemyBase[randamValue].Element;
+            StartCoroutine(logManager.TypeLog($"あなたのターンです。"));
+            gameManager.StartPlayerTurn();
         }
 
         // ターンが敵に切り替わったときに呼び出されるメソッド
