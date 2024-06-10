@@ -143,7 +143,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6521611939333777812}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca81c363fcc94268839f716915507267, type: 3}
+  m_Script: {fileID: 11500000, guid: d9c5b18575ab438f9958bfa5b39ca4c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  racketController: {fileID: 3354777789037502270, guid: 6090ec2de09c9d4458db18206b181718, type: 3}
+  raket: {fileID: 0}
+  gameManager: {fileID: 0}
+  enemy: {fileID: 0}
+  playerPower: 0

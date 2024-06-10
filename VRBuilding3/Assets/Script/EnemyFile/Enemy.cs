@@ -23,11 +23,8 @@ namespace Script
         private int define;
         private Skills skill;
         private EnemyElement element;
-        private void Start()
-        {
-
-        }
-
+        
+        //雑魚敵をランダムに選択し召喚<GameManager>.Spawn()>>
         public void EnemySelect()
         {
             int randamValue = Random.Range(0, 3);
@@ -37,7 +34,7 @@ namespace Script
             define = enemyBase[randamValue].Definese;
             skill = enemyBase[randamValue].Skills;
             element = enemyBase[randamValue].Element;
-            StartCoroutine(logManager.TypeLog($"あなたのターンです。"));
+            StartCoroutine(logManager.TypeLog($"{enemyBase[randamValue].Names}が現れた"));
             gameManager.StartPlayerTurn();
         }
 

@@ -8,7 +8,7 @@ namespace Script
     public class EnemyBase :ScriptableObject
     {
         //名前
-        [SerializeField] new string name;
+        [SerializeField] new string names;
         //オブジェクト
         [SerializeField] private GameObject enemyDate;
         //属性
@@ -19,6 +19,8 @@ namespace Script
         [SerializeField] private int definese;
         //スキル
         [SerializeField] private Skills skills;
+        //変数を取得だけ可能にする編集不可
+        public string Names { get => names; }
         public Skills Skills { get => skills; }
         public EnemyElement Element { get => element; }
         public int Attack { get => attack; }

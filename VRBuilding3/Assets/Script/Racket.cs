@@ -44,12 +44,11 @@ namespace Script
         public void SkillFireBall() { fireBall = true; _gameManager.Spawn(); }
         public void SkillAquaCure() { aquaCure = true;_gameManager.Spawn(); }
         public void SkillLeafGard() { leafGard = true;_gameManager.Spawn();  }
-
+        //行動選択<GameManager>.StartPlayerTurn()>>
         public void StartTurn()
         {
             playerTurn = true;
-            StartCoroutine(logManager.TypeLog($"あなたのターンです。"));
-            
+            StartCoroutine(logManager.TypeLog($"あなたのターンです。\n行動を選択してください。"));
         }
 
         public void EndTurn()
@@ -71,7 +70,18 @@ namespace Script
 
         public void Skill()
         {
-
+            if (fireBall == true)
+            {
+                
+            }
+            if (aquaCure == true)
+            {
+                
+            }
+            if (leafGard == true)
+            {
+                
+            }
         }
 
         public void PlayerDamage()

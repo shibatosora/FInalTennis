@@ -10,15 +10,15 @@ namespace Script
         [SerializeField] private LogManager logManager;
         [SerializeField] private GameObject Card;
         //カード選択
-        void Start() { Card.SetActive(true); }
+        void Start() { Card.SetActive(true); StartCoroutine(logManager.TypeLog($"カードを一枚選択してください"));}
         //敵ランダム選択
-        public void Spawn() { enemy.EnemySelect(); }
+        public void Spawn() { Card.SetActive(false); enemy.EnemySelect(); }
         
         public void Clear()
         {
             
         }
-            // プレイヤーのターンを開始する
+        // プレイヤーのターンを開始する<Enemy>.EnemySelect()>>
         public void StartPlayerTurn() { racket.StartTurn(); }
 
         // プレイヤーが攻撃を選択したときに呼び出されるメソッド
