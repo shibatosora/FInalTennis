@@ -150,3 +150,6 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   enemy: {fileID: 0}
   playerPower: 0
+  fireBallEffect: {fileID: 1206498299807332555, guid: af6c1e3f046eecd4d81330aeb285600f, type: 3}
+  aquaCureEffct: {fileID: 0}
+  leafGuardEffect: {fileID: 0}

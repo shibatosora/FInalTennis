@@ -12,6 +12,9 @@ namespace Script
         public Enemy enemy;
         public int playerPower = 0;
         private bool playerTrun = true;
+        [SerializeField] private GameObject fireBallEffect;
+        [SerializeField] private GameObject aquaCureEffct;
+        [SerializeField] private GameObject leafGuardEffect;
 
         void Start()
         {
@@ -21,6 +24,23 @@ namespace Script
             enemy = GameObject.Find("Enemy").GetComponent<Enemy>();
         }
 
+        public void FireBall()
+        {
+            Vector3 effectPosition = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+            Instantiate(fireBallEffect, effectPosition, Quaternion.identity);
+            
+        }
+        public void AquaBall()
+        {
+            Vector3 effectPosition = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+            Instantiate(aquaCureEffct, effectPosition, Quaternion.identity);   
+        }
+
+        public void LeafGuard()
+        {
+            Vector3 effectPosition = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+            Instantiate(leafGuardEffect, effectPosition, Quaternion.identity);   
+        }
         void OnCollisionEnter(Collision collision)
         {
             if (collision.gameObject.CompareTag("Racket"))
@@ -53,8 +73,8 @@ namespace Script
                 {
                     playerPower = raket._power;
                     enemy.EnemyDamage(playerPower);
+                    Destroy(this.gameObject);
                 }
-                Destroy(this.gameObject);
                 bounds = 0;
                 gameManager.EndPlayerTurn();
             }

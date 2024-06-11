@@ -17,6 +17,10 @@ namespace Script
         [SerializeField] private List<EnemyBase> enemyBase=new List<EnemyBase>();
         [SerializeField] private EnemyBase bossEnemy;
         [SerializeField] private LogManager logManager;
+        [SerializeField] private Transform EnemyBall;
+        [SerializeField] GameObject ballPrefab;
+
+        private int randamValue;
         //ステータス
         private int HP=1;
         private int power;
@@ -27,14 +31,14 @@ namespace Script
         //雑魚敵をランダムに選択し召喚<GameManager>.Spawn()>>
         public void EnemySelect()
         {
-            int randamValue = Random.Range(0, 3);
+            randamValue = Random.Range(0, 3);
             GameObject enemy = Instantiate(enemyBase[randamValue].EnemyDate, enemyBase[randamValue].EnemyDate.transform.position, enemyBase[randamValue].EnemyDate.transform.rotation);
             HP = enemyBase[randamValue].MaxHP;
             power = enemyBase[randamValue].Attack;
             define = enemyBase[randamValue].Definese;
             skill = enemyBase[randamValue].Skills;
             element = enemyBase[randamValue].Element;
-            StartCoroutine(logManager.TypeLog($"{enemyBase[randamValue].Names}が現れた"));
+            StartCoroutine(logManager.TypeLog($"{enemyBase[randamValue].Names}が現れた\nあなたのターンです。行動を選択してください。"));
             gameManager.StartPlayerTurn();
         }
 
@@ -48,18 +52,21 @@ namespace Script
         // 行動を決定し実行するメソッド
         private void PerformAction()
         {
-            float randomValue = Random.value; // 0から1のランダムな値を生成
+            float randomValues = Random.value; // 0から1のランダムな値を生成
 
-            if (randomValue < attackProbability)
+            if (randomValues < attackProbability)
             {
+                StartCoroutine(logManager.TypeLog($"{enemyBase[randamValue].Names}の攻撃！"));
                 Attack();
             }
-            else if (randomValue < attackProbability + defendProbability)
+            else if (randomValues < attackProbability + defendProbability)
             {
+                StartCoroutine(logManager.TypeLog($"{enemyBase[randamValue].Names}は身構えた！"));
                 Defend();
             }
             else
-            {
+            {    
+                StartCoroutine(logManager.TypeLog($"{enemyBase[randamValue].Names}は{enemyBase[randamValue].Skills}を使った！"));
                 UseSkill();
             }
         }
@@ -67,8 +74,12 @@ namespace Script
         // 攻撃を実行するメソッド
         private void Attack()
         {
-            // ここに攻撃の処理を追加
-            Debug.Log("Enemy attacks!");
+            GameObject ball;
+            Rigidbody ballRigidbody;
+            ball = Instantiate(ballPrefab, EnemyBall.position, Quaternion.identity);
+            ballRigidbody = ball.GetComponent<Rigidbody>();
+            ballRigidbody.AddForce(new Vector3(0f, 0.02f, 0.02f), ForceMode.Impulse);
+
         }
 
         // 防御を実行するメソッド

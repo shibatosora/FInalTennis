@@ -9,18 +9,18 @@ namespace Script
         [SerializeField] Enemy enemy;
         [SerializeField] private LogManager logManager;
         [SerializeField] private GameObject Card;
-        //カード選択
-        void Start() { Card.SetActive(true); StartCoroutine(logManager.TypeLog($"カードを一枚選択してください"));}
-        //敵ランダム選択
-        public void Spawn() { Card.SetActive(false); enemy.EnemySelect(); }
-        
+        [SerializeField] private GameObject command;
         public void Clear()
         {
             
         }
+        //カード選択
+        void Start() { Card.SetActive(true); StartCoroutine(logManager.TypeLog($"カードを一枚選択してください"));}
+        //敵ランダム選択
+        public void Spawn() { Card.SetActive(false); enemy.EnemySelect(); }
         // プレイヤーのターンを開始する<Enemy>.EnemySelect()>>
-        public void StartPlayerTurn() { racket.StartTurn(); }
-
+        public void StartPlayerTurn() { racket.StartTurn(); command.SetActive(true);}
+        public void commandOf(){command.SetActive(false);}
         // プレイヤーが攻撃を選択したときに呼び出されるメソッド
         public void OnAttackButtonClicked()
         {

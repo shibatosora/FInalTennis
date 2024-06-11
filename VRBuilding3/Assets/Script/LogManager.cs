@@ -19,8 +19,7 @@ public class LogManager : MonoBehaviour
         foreach (char letter in log)
         {
             logText.text += letter;
-            yield return new WaitForSeconds(1f / 30);
+            yield return new WaitForSeconds(1f / 100);
         }
     }
-
 }
